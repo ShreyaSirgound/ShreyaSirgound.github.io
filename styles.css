@@ -13,18 +13,8 @@ html {
     scroll-behavior: smooth;
 }
 
-/*BODY*/
-/*
-#overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, black, transparent);
-    opacity: 0.1;
-}*/
-
 .background-image {
-    background-image: url(images/gradient.jpg);/*(images/gradient.jpg);*/
+    background-image: url(images/gradient.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -77,24 +67,6 @@ nav li, nav a {
     text-decoration: none;
 }
 
-/*
-button {
-    padding: 10px 20px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}*/
-/*
-.hero-section {
-
-}*/
-
 path {
     stroke-dasharray: 2458.319580078125px;
     stroke-dashoffset: -2458.319580078125px;
@@ -136,23 +108,6 @@ path {
     animation: fadeInUp 3s 2s forwards;
 }
 
-/*
-.intro-info::before,
-.intro-info::after {
-    content: "";
-}
-
-.intro-info:before {
-    background: teal;
-    animation: typewriter 1s ease;
-}
-
-@keyframes typewriter {
-    to {
-        left: 100%;
-    }
-}*/
-
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -160,12 +115,71 @@ path {
     }
 }
 
+/*ABOUT SECTION*/
+.about-section {
+    background-color: white;
+    margin: 10% 5% -5% 5%;
+    padding: 5% 5% 45% 5%;
+    display:flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.about-title {
+    font-size: 40px;
+}
+
+.about-desc {
+    font-family: Karla, monospace;
+    font-weight: 100;
+    font-size: 20px;
+    color: #24252A;
+    text-decoration: none;
+    line-height: 150%;
+    width: 40%;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 3s 2s forwards;
+}
+
+.about-uni-link {
+    color: #76B1D6;
+    text-decoration: none;
+}
+
+.about-uni-link:hover {
+    color:#3e6780;
+    text-decoration:none;
+}
+
+.about-img {
+    width: 300px;
+    height: 310px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*PROJECTS*/
 .main {
     background-color: #24252A;
+    color: whitesmoke;
 }
 
-.endeavors {
+.main-title {
+    font-family: Karla, monospace;
+    font-weight: 1000;
+    font-size: 45px;
+    padding: 5% 0 5% 0;
+    text-align: center;
+}
+
+.main-desc {
+    font-family: Karla, monospace;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10% 5% 5% 15%;
+}
+
+/*.endeavors {
     display: flex;
     justify-content: center;
     padding: 3% 0% 1% 0%;
@@ -199,7 +213,7 @@ path {
 
 .portfolio_sections li a:hover {
     text-decoration: underline;
-}
+}*/
 
 /*PROJECT WORKS*/
 /*SLIDER*/
@@ -208,12 +222,13 @@ path {
     display: flex;
     overflow: hidden;
     margin: 0 0 3%;
+    padding: 0 0 0 5%;
 }
 
 .slide-track {
     display: flex;
     padding: 1%;
-    animation: slidescroll 15s infinite linear;
+    animation: slidescroll 30s infinite linear;
 }
 
 @keyframes slidescroll {
@@ -423,12 +438,20 @@ path {
     align-items: center;
     justify-content: center;
     display:flex;
-    padding: 10% 15% 5% 15%;
+    padding: 15% 15% 10% 15%;
 }
 
 .contact .contact_grid {
     margin: 0;
     padding: 0;
+}
+
+.contact-title {
+    font-family: Karla, monospace;
+    font-weight: 1000;
+    font-size: 45px;
+    color: whitesmoke;
+    padding: 5% 0 15% 0;
 }
 
 .contact_desc {
@@ -440,7 +463,7 @@ path {
     opacity: 0;
     transform: translateY(2rem);
     animation: fadeInUp 3s 2s forwards;
-    width: 45%;
+    width: 50%;
     margin: 0;
     padding: 0;
 }
@@ -666,8 +689,8 @@ path {
     position:relative;
     display:flex;
     align-items: center;
-    justify-content: center;
-    margin: 25px 15px 0px 15px;
+    justify-content: space-evenly;
+    margin: 0px 25px 0px 35px;
 }
 
 .footer .footer_info {

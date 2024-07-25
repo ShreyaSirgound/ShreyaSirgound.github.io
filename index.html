@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Rey S </title>
+    <title> Shreya Sirgound </title>
     <meta name=""description" content="">
+
     <!--Remixicons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <!--CSS-->
     <link rel="stylesheet" href="styles.css">
     <!--<script src="script.js"></script>-->
+
     <script>
         $(window).scroll(function(){
 
@@ -33,17 +35,16 @@
     <div class = "background-image">
        <div id = "overlay"></div>
         <header>
-            <!-- <h1 class = "logo"> Rey S :)</h1> -->
             <nav>
                 <ul class = "nav_links">
-                    <li> <a href = "#"> About </a> </li>
-                    <li> <a href = "#"> Portfolio </a> </li>
-                    <li> <a href = "#"> Contact </a> </li>
+                    <li><a href = "#about"> About </a></li>
+                    <li><a href = "#main"> Portfolio </a></li>
+                    <li><a href = "#contact"> Contact </a></li>
                 </ul>
             </nav>
         </header>
-    <!--BACKGROUND-->
-        <!--INTRO-->
+
+    <!--HERO SECTION-->
         <div class = "hero-section">
             <div class = "introduction">
                 Hey there!<br>
@@ -65,9 +66,24 @@
         </div>
     </div>
     
+    <!--ABOUT ME-->
+    <div class="about-section" id="about">
+        <div class="about-desc">
+            <h2 class="about-title">About Me</h2><br>
+            <p>&#128075; Hi, I'm Shreya! I'm currently studying <b>Computer Science, Mathematics & Statistics</b> 
+                at <a href="https://maps.app.goo.gl/5xz3d6zby19vwqZL8" class="about-uni-link"><b>The University of Toronto <i class="ri-map-pin-line"></i></b></a>. I have a passion for bringing together technology and 
+                design to create effective and engaging applications. I'm always working towards learning 
+                new technologies - either through self-study or learning opportunities.</p>
+        </div>
+        <div class="about-img">
+            <img src="images/profile-img-site.png" alt="image" class="about-img">
+        </div>
+    </div>
 
     <!--PROJECTS-->
-    <div class = "main">
+    <div class = "main" id="main">
+        <h1 class="main-title">Featured Projects</h1><br>
+        <!--
         <h1 class = "endeavors"> Here are some of my cooler endeavors </h1>
         
         <ul class = "portfolio_sections">
@@ -76,6 +92,7 @@
             <li class = "section-3"><a href = "#"><b> Artwork </b></a></li>
             <li class = "section-4"><a href = "#"><b> Volunteering </b></a></li>
         </ul>
+        -->
 
         <!--CARDS-->
         <div class = "slider">
@@ -173,11 +190,12 @@
         </div>
     
         <!--CONTACT SECTION-->
-        <ul class="contact">
+        <ul class="contact" id="contact">
             <li class="contact_grid">
                 <div class="contact_desc">
+                    <h2 class="contact-title">Get In Touch</h2>
                     <p>See something interesting? 
-                        Don't hesitate to drop me a message. 
+                        Don't hesitate to drop me a message &#9993;&#65039;. 
                         Whether its an opportunity, a chat, 
                         or feedback on my profile, my inbox is open!</p>
                 </div>
@@ -211,8 +229,6 @@
                         </div>
                 
                         <div class="cCol">
-                            <!--<i class="ri-send-plane-fill"></i>
-                            <input type="submit" type="text" value="Send">-->
                             <button type="submit"><i class="ri-send-plane-fill"></i> Send </button>
                         </div>
                       </div>
@@ -225,10 +241,10 @@
         <ul class= "footer">
             <li class="footer_info">
                 <ul class="socials">
-                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a></li>
-                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a></li>
-                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-article-line"></i></a></li>
-                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-file-3-line"></i></a></li>
+                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-github-fill" title="Github"></i></a></li>
+                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill" title="LinkedIn"></i></a></li>
+                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-article-line" title="Substack"></i></a></li>
+                    <li><a href="#" target="_blank" class="home__social-link"><i class="ri-file-3-line" title="Resume"></i></a></li>
                 </ul>
             </li>
             <li class="footer_info">Designed and made by Shreya Sirgound</li>     
