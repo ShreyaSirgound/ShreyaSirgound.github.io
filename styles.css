@@ -598,6 +598,7 @@ path {
   .socials li .home__social-link:hover {
 	/*box-shadow: 0 2px 5px rgba(0,0,0,0.3);*/
 	text-decoration:none;
+    color: rgb(100, 26, 107);/*#6e5494;*/
   }
   
   .socials li .home__social-link .ri {
@@ -613,19 +614,19 @@ path {
   }*/
   
   .socials li:nth-child(1) .home__social-link:hover {
-	color: #3b5998;
+	color: #89348b;
   }
   
   .socials li:nth-child(2) .home__social-link:hover {
-	color: #00aced;
+	color: #6fc8e9;
   }
   
   .socials li:nth-child(3) .home__social-link:hover {
-	color: #dd4b39;
+	color: #fdf587;
   }
   
   .socials li:nth-child(4) .home__social-link:hover {
-	color: #007bb6;
+	color: #d63939;
   }
 
   .home__social{
