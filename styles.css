@@ -155,7 +155,7 @@ path {
 .about-img {
     width: 300px;
     height: 310px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
 }
 
 /*PROJECTS*/
@@ -269,22 +269,25 @@ path {
 /*CARDS*/
 .cards {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: space-evenly;
+    justify-content:center;
+    gap: 5%;
 }
 
 .card {
     color: white;
     padding: 10rem 0 0;
     max-width: 35ch;
+    min-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(140, 212, 224, 0.63), 0 6px 20px 0 rgba(245, 245, 245, 0.562);
 
     transition: transform 500ms ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+   transform: scale(1.05);
 }
 
 .card-content {
@@ -292,14 +295,14 @@ path {
     padding: 1.5rem;
     background: linear-gradient(
         hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / 0.1) 10%,
+        hsl(0 0% 0% / 0.7) 30%,
         hsl(0 0% 0% / 1)
     );
 }
 
 @media (hover) {
     .card-content {
-        transform: translateY(60%);
+        transform: translateY(70%);
         transition: transform 500ms ease;
     }
 
@@ -314,7 +317,7 @@ path {
     }
 
     .card-content > *:not(.card-title) {
-        opacity: 0;
+        opacity: 0.5;
         transition: opacity 500ms linear;
     }
 
@@ -332,6 +335,7 @@ path {
 
 .card:hover .card-content {
     transform: translateY(0);
+    height: 100%;
 }
 
 .card-title {
@@ -360,7 +364,16 @@ path {
 
 .card-body {
     color: rgb(255 255 255 / 0.85);
-    padding: 0.5em;
+    padding:0.25em;
+    min-height: 120px;
+    max-height: 120px;
+}
+
+.card-langs {
+    color: rgba(218, 208, 208, 0.85);
+    font-size: 14px;
+    padding: 1.2em;
+    text-align:left
 }
 
 .card-button {
@@ -378,17 +391,17 @@ path {
 }
 
 .card:nth-of-type(1){
-    background-image: url("/images/scene.jpg");
+    background-image: url("/images/schoolsync.png");
     background-size:cover;
 }
 
 .card:nth-of-type(2){
-    background-image: url("/images/bg1.jpg");
+    background-image: url("/images/orgtrack.png");
     background-size:cover;
 }
 
 .card:nth-of-type(3){
-    background-image: url("/images/bg2.jpg");
+    background-image: url("/images/reminders-pic.png");
     background-size:cover;
 }
 
