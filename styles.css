@@ -31,6 +31,20 @@ header {
     background-color: none;
 }
 
+/*SCROLL ANIMATIONS*/
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 2.5s 0.75s forwards;
+    margin: 0;
+    padding:0;
+}
 
 .logo {
     font-family: "Shadows Into Light", cursive;
@@ -103,9 +117,9 @@ path {
     margin-left: 700px;
     margin-right: 90px;
     margin-top: -550px;
-    opacity: 0;
+    /*opacity: 0;
     transform: translateY(2rem);
-    animation: fadeInUp 3s 2s forwards;
+    animation: fadeInUp 3s 2s forwards;*/
 }
 
 @keyframes fadeInUp {
@@ -117,9 +131,8 @@ path {
 
 /*ABOUT SECTION*/
 .about-section {
-    background-color: white;
-    margin: 10% 5% -5% 5%;
-    padding: 5% 5% 45% 5%;
+    margin: 10% 5% 0% 5%;
+    padding: 0% 0% 0% 0%;
     display:flex;
     justify-content: space-evenly;
     height: 100vh;
@@ -137,9 +150,9 @@ path {
     text-decoration: none;
     line-height: 150%;
     width: 40%;
-    opacity: 0;
-    transform: translateY(2rem);
-    animation: fadeInUp 3s 2s forwards;
+    /*opacity: 1;*/
+    /*transform: translateY(2rem);
+    animation: fadeInUp 3s 2s forwards;*/
 }
 
 .about-uni-link {
@@ -168,7 +181,7 @@ path {
     font-family: Karla, monospace;
     font-weight: 1000;
     font-size: 45px;
-    padding: 5% 0 5% 0;
+    padding: 13% 0 5% 0;
     text-align: center;
 }
 
@@ -217,7 +230,7 @@ path {
 
 /*PROJECT WORKS*/
 /*SLIDER*/
-.slider {
+/*.slider {
     position: relative;
     display: flex;
     overflow: hidden;
@@ -264,7 +277,7 @@ path {
     right: 0;
     top: 0;
     transform: rotatez(180deg);
-}
+}*/
 
 /*CARDS*/
 .cards {
@@ -369,12 +382,13 @@ path {
     max-height: 120px;
 }
 
+/*
 .card-langs {
     color: rgba(218, 208, 208, 0.85);
     font-size: 14px;
     padding: 1.2em;
     text-align:left
-}
+}*/
 
 .card-button {
     cursor: pointer;
@@ -445,13 +459,17 @@ path {
     background-size:cover;
 }
 
-/*##############################################################################*/
+/*CONTACT*/
+.contact-section{
+    background-color: #24252A;
+}
+
 .contact{
     list-style-type:none;
     align-items: center;
     justify-content: center;
     display:flex;
-    padding: 15% 15% 10% 15%;
+    padding: 25% 15% 10% 15%;
 }
 
 .contact .contact_grid {
@@ -473,9 +491,9 @@ path {
     font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
-    opacity: 0;
-    transform: translateY(2rem);
-    animation: fadeInUp 3s 2s forwards;
+    opacity: 1;
+    /*transform: translateY(2rem);*/
+    /*animation: fadeInUp 3s 2s forwards;*/
     width: 50%;
     margin: 0;
     padding: 0;
@@ -703,7 +721,6 @@ path {
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0px 25px 0px 35px;
 }
 
 .footer .footer_info {
