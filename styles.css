@@ -15,24 +15,8 @@ html {
 
 body {
     transition: background 0.5s ease;
-}
-
-.background-image {
-    background-image: url(images/gradient.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 1;
-    height: 100vh;
-}
-
-/*NAVBAR*/
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 35px 5px 40px;
-    background-color: none;
+    width: 100%;
+    height: 100%
 }
 
 /*SCROLL ANIMATIONS*/
@@ -48,6 +32,27 @@ header {
     animation: fadeInUp 2.5s 0.75s forwards;
     margin: 0;
     padding:0;
+    height: 100%;
+}
+
+.background-image {
+    background-image: url(images/gradient.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+/*NAVBAR*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 35px 5px 40px;
+    background-color: none;
+    width: 100%;
 }
 
 .logo {
@@ -98,17 +103,28 @@ path {
     }
 }
 
+.hero-section {
+    width: 100%;
+    display: flex;
+    padding: 5% 5% 5% 5%;
+    justify-content: center;
+    
+}
+
 .introduction {
     font-family: "Martian Mono", monospace;
     font-size: 95px;
     color: #edf0f1;
     text-decoration: none;
-    padding: 60px 0px 0px 60px;
+    /*padding: 60px 0px 0px 60px;*/
+    margin: 0;
     line-height: 160%;
+    width: 55%;
 }
 
 .name {
-    margin:-200px 130px 0px;
+    margin:-200px 130px 0;
+    padding: 0;
 }
 
 .intro-info {
@@ -117,10 +133,9 @@ path {
     font-size: 21px;
     color: #edf0f1;
     text-decoration: none;
+    width: 100%;
+    padding: 35% 0 0 0;
     line-height: 150%;
-    margin-left: 700px;
-    margin-right: 90px;
-    margin-top: -550px;
 }
 
 @keyframes fadeInUp {
@@ -132,11 +147,12 @@ path {
 
 /*ABOUT SECTION*/
 .about-section {
-    margin: 10% 5% 0% 5%;
+    margin: 10% 5% 0% 0%;
     padding: 0% 0% 0% 0%;
     display:flex;
     justify-content: space-evenly;
     height: 100vh;
+    width: 100%;
 }
 
 .about-title {
@@ -150,7 +166,7 @@ path {
     color: #24252A;
     text-decoration: none;
     line-height: 150%;
-    width: 40%;
+    width: 36%;
 }
 
 .about-uni-link {
@@ -173,6 +189,7 @@ path {
 .main {
     /*background-color: #24252A;*/
     color: whitesmoke;
+    width: 100%;
 }
 
 .main-title {
@@ -416,6 +433,7 @@ path {
 /*CONTACT*/
 .contact-section{
     background-color: #24252A;
+    width: 100%;
 }
 
 .contact{
@@ -598,7 +616,8 @@ path {
 	text-decoration:none;
 	box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 	background: linear-gradient(0deg, #ddd, #fff);
-	transition: .5s;*/
+    */
+	transition: .5s;
   }
   
   .socials li .home__social-link:hover {
@@ -624,7 +643,7 @@ path {
   }
   
   .socials li:nth-child(2) .home__social-link:hover {
-	color: #6fc8e9;
+	color: #0077b5;
   }
   
   .socials li:nth-child(3) .home__social-link:hover {
@@ -673,6 +692,7 @@ path {
     display:flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .footer .footer_info {
