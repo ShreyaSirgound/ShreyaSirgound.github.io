@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    transition: background 0.5s ease;
+}
+
 .background-image {
     background-image: url(images/gradient.jpg);
     background-size: cover;
@@ -104,11 +108,11 @@ path {
 }
 
 .name {
-    margin:-200px 130px 0px; /*100 for 2nd value*/
+    margin:-200px 130px 0px;
 }
 
 .intro-info {
-    font-family: Karla, monospace;/*"Source Code Pro", monospace;*/
+    font-family: Karla, monospace;
     font-weight: 100;
     font-size: 21px;
     color: #edf0f1;
@@ -117,9 +121,6 @@ path {
     margin-left: 700px;
     margin-right: 90px;
     margin-top: -550px;
-    /*opacity: 0;
-    transform: translateY(2rem);
-    animation: fadeInUp 3s 2s forwards;*/
 }
 
 @keyframes fadeInUp {
@@ -150,9 +151,6 @@ path {
     text-decoration: none;
     line-height: 150%;
     width: 40%;
-    /*opacity: 1;*/
-    /*transform: translateY(2rem);
-    animation: fadeInUp 3s 2s forwards;*/
 }
 
 .about-uni-link {
@@ -173,7 +171,7 @@ path {
 
 /*PROJECTS*/
 .main {
-    background-color: #24252A;
+    /*background-color: #24252A;*/
     color: whitesmoke;
 }
 
@@ -181,7 +179,7 @@ path {
     font-family: Karla, monospace;
     font-weight: 1000;
     font-size: 45px;
-    padding: 13% 0 5% 0;
+    padding: 8% 0 5% 0;
     text-align: center;
 }
 
@@ -191,42 +189,6 @@ path {
     font-size: 20px;
     padding: 10% 5% 5% 15%;
 }
-
-/*.endeavors {
-    display: flex;
-    justify-content: center;
-    padding: 3% 0% 1% 0%;
-    font-family: Roboto, sans-serif;
-    font-size: 40px;
-    font-weight: 50;
-    color: #0088a9; 
-}
-
-.portfolio_sections {
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: 140;
-    list-style: none;
-    padding: 0% 20%;
-    text-align: center;
-}
-
-.portfolio_sections li {
-    display: inline-block;
-    padding: 3%;
-}
-
-.portfolio_sections a {
-    color: whitesmoke;
-}
-
-.portfolio_sections li a {
-    transition: all 0.3s ease 0s;
-}
-
-.portfolio_sections li a:hover {
-    text-decoration: underline;
-}*/
 
 /*PROJECT WORKS*/
 /*SLIDER*/
@@ -382,14 +344,6 @@ path {
     max-height: 120px;
 }
 
-/*
-.card-langs {
-    color: rgba(218, 208, 208, 0.85);
-    font-size: 14px;
-    padding: 1.2em;
-    text-align:left
-}*/
-
 .card-button {
     cursor: pointer;
     display: inline;
@@ -492,8 +446,6 @@ path {
     color: #edf0f1;
     text-decoration: none;
     opacity: 1;
-    /*transform: translateY(2rem);*/
-    /*animation: fadeInUp 3s 2s forwards;*/
     width: 50%;
     margin: 0;
     padding: 0;

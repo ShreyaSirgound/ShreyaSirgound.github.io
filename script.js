@@ -1,4 +1,17 @@
-//Scroll animations
+//Background scroll
+$(function () {
+    'use strict';
+    var view = $(window).height();
+    $('.part').height(view).scrollie({
+        scrolloffset: -100,
+        scrollingInView: function (elem) {
+            var bgColor = elem.data('background')
+            $('body').css('background-color', bgColor);
+        }
+    });
+});
+
+//Text scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)

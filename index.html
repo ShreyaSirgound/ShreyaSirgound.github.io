@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Shreya Sirgound </title>
-    <meta name=""description" content="">
+    <meta name="description" content="">
 
     <!--Remixicons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
@@ -25,7 +25,12 @@
             });
         })();
     </script>
+
+    <!--SCROLL JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-scrollie-master/jquery.scrollie.min.js"></script>
 </head>
+
 <body>
     <!--NAVBAR-->
     <div class = "background-image">
@@ -65,70 +70,64 @@
     </div>
     
     <!--ABOUT ME-->
-    <div class="about-section" id="about">
-        <div class="about-desc">
-            <section class="hidden">
-                <h2 class="about-title">About Me</h2><br>
-            <p>&#128075; Hi, I'm Shreya! I'm currently studying <b>Computer Science, Mathematics & Statistics</b> 
-                at <a href="https://maps.app.goo.gl/5xz3d6zby19vwqZL8" class="about-uni-link"><b>The University of Toronto <i class="ri-map-pin-line"></i></b></a>. I have a passion for bringing together technology and 
-                design to create effective and engaging applications. I'm always working towards learning 
-                new technologies - either through self-study or learning opportunities.
-            </p>
-            </section>
+    <div class="bg-color">
+        <div class="part" data-background="white">
+            <div class="about-section" id="about">
+                <div class="about-desc">
+                    <section class="hidden">
+                        <h2 class="about-title">About Me</h2><br>
+                    <p>&#128075; Hi, I'm Shreya! I'm currently studying <b>Computer Science, Mathematics & Statistics</b> 
+                        at <a href="https://maps.app.goo.gl/5xz3d6zby19vwqZL8" class="about-uni-link"><b>The University of Toronto <i class="ri-map-pin-line"></i></b></a>. I have a passion for bringing together technology and 
+                        design to create effective and engaging applications. I'm always working towards learning 
+                        new technologies - either through self-study or learning opportunities.
+                    </p>
+                    </section>
+                </div>
+                <section class="hidden">
+                    <div class="about-img">
+                        <img src="images/profile-img-site.png" alt="image" class="about-img">
+                    </div>
+                </section>
+            </div>
         </div>
-        <section class="hidden">
-            <div class="about-img">
-                <img src="images/profile-img-site.png" alt="image" class="about-img">
-            </div>
-        </section>
-    </div>
 
-    <!--PROJECTS-->
-    <div class = "main" id="main">
-        <section class="hidden">
-            <h1 class="main-title">Featured Projects</h1><br>
-        </section>
-        <!--
-        <h1 class = "endeavors"> Here are some of my cooler endeavors </h1>
+        <!--PROJECTS-->
+        <div class="part" data-background="#24252A">
+            <div class ="main" id="main">
+                <section class="hidden">
+                    <h1 class="main-title">Featured Projects</h1><br>
+                </section>
+
+                <!--CARDS-->
+                <section class="hidden">
+                    <div class="cards">
+                        <div class ="card">
+                            <div class ="card-content">
+                                <h2 class ="card-title">SchoolSync</h2>
+                                <p class="card-body">A communication + organizational tool used to track, organize, and visualize student participation in school events.</p>
+                                <!--<p class="card-langs">Java</p>-->
+                                <a href="https://github.com/ShreyaSirgound/SchoolSync" class ="card-button">Learn More</a>
+                            </div>
+                        </div>
+    
+                        <div class = "card">
+                            <div class = "card-content">
+                                <h2 class = "card-title">OrgTrackPro</h2>
+                                <p class="card-body">An application that streamlines communication between schools and its business and community partners.</p>
+                                <a href="https://github.com/ShreyaSirgound/OrgTrackPro" class ="card-button">Learn More</a>
+                            </div>
+                        </div>
         
-        <ul class = "portfolio_sections">
-            <li class = "section-1"><a href = "#"><b> Coding Works </b></a></li>
-            <li class = "section-2"><a href = "#"><b> Writing </b></a></li>
-            <li class = "section-3"><a href = "#"><b> Artwork </b></a></li>
-            <li class = "section-4"><a href = "#"><b> Volunteering </b></a></li>
-        </ul>
-        -->
-
-        <!--CARDS-->
-        <section class="hidden">
-            <div class="cards">
-                <div class = "card">
-                    <div class = "card-content">
-                        <h2 class = "card-title">SchoolSync</h2>
-                        <p class="card-body">A communication + organizational tool used to track, organize, and visualize student participation in school events.</p>
-                        <!--<p class="card-langs">Java</p>-->
-                        <a href="https://github.com/ShreyaSirgound/SchoolSync" class ="card-button">Learn More</a>
+                        <div class = "card">
+                            <div class = "card-content">
+                                <h2 class = "card-title">Reminders</h2>
+                                <p class="card-body">Simple utility application for keeping track of your tasks.</p>
+                                <a href="https://github.com/ShreyaSirgound/Reminders" class ="card-button">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-    
-                <div class = "card">
-                    <div class = "card-content">
-                        <h2 class = "card-title">OrgTrackPro</h2>
-                        <p class="card-body">An application that streamlines communication between schools and its business and community partners.</p>
-                        <a href="https://github.com/ShreyaSirgound/OrgTrackPro" class ="card-button">Learn More</a>
-                    </div>
-                </div>
-    
-                <div class = "card">
-                    <div class = "card-content">
-                        <h2 class = "card-title">Reminders</h2>
-                        <p class="card-body">Simple utility application for keeping track of your tasks.</p>
-                        <a href="https://github.com/ShreyaSirgound/Reminders" class ="card-button">Learn More</a>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
-    </div>
 
         <!--
         <div class = "slider">
@@ -226,70 +225,72 @@
         </div>
     -->
     
-        <!--CONTACT SECTION-->
-        <div class="contact-section">
-            <section class="hidden">
-                <ul class="contact" id="contact">
-                    <li class="contact_grid">
-                        <div class="contact_desc">
-                            <h2 class="contact-title">Get In Touch</h2>
-                            <p>See something interesting? 
-                                Don't hesitate to drop me a message &#9993;&#65039;. 
-                                Whether its an opportunity, a chat, 
-                                or feedback on my profile, my inbox is open!</p>
-                        </div>
-                    </li>
-                    <li class="contact_grid">
-                        <div class="contactSection" id="contact-form">
-                            <div class="contactCard">
-                              <h2>Contact Me</h2>
-                              <div class="cRow">
-                                <div class="cCol">
-                                  <div class="cform-group">
-                                    <label>Name</label>
-                                    <input type="text" id="name">
-                                  </div>
-                                </div>
-                        
-                                <div class="cCol">
-                                  <div class="cform-group">
-                                    <label>Email</label>
-                                    <input type="text" id="email">
-                                  </div>
-                                </div>
-                        
-                                <div class="cCol">
-                                  <div class="cform-group">
-                                    <div class="contactMessage">
-                                      <label>Message</label>
-                                      <textarea id="message"></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-                        
-                                <div class="cCol">
-                                    <button type="submit" id="contact-send-btn" onclick="SendMail()"><i class="ri-send-plane-fill"></i> Send </button>
-                                </div>
-                              </div>
+            <!--CONTACT SECTION-->
+            <div class="contact-section">
+                <section class="hidden">
+                    <ul class="contact" id="contact">
+                        <li class="contact_grid">
+                            <div class="contact_desc">
+                                <h2 class="contact-title">Get In Touch</h2>
+                                <p>See something interesting? 
+                                    Don't hesitate to drop me a message &#9993;&#65039;. 
+                                    Whether it's an opportunity, a chat, 
+                                    or feedback on my profile, my inbox is open!</p>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </div>
+                        </li>
+                        <li class="contact_grid">
+                            <div class="contactSection" id="contact-form">
+                                <div class="contactCard">
+                                <h2>Contact Me</h2>
+                                <div class="cRow">
+                                    <div class="cCol">
+                                    <div class="cform-group">
+                                        <label>Name</label>
+                                        <input type="text" id="name">
+                                    </div>
+                                    </div>
+                        
+                                    <div class="cCol">
+                                    <div class="cform-group">
+                                        <label>Email</label>
+                                        <input type="text" id="email">
+                                    </div>
+                                    </div>
+                            
+                                    <div class="cCol">
+                                    <div class="cform-group">
+                                        <div class="contactMessage">
+                                        <label>Message</label>
+                                        <textarea id="message"></textarea>
+                                        </div>
+                                    </div>
+                                    </div>
+                        
+                                    <div class="cCol">
+                                        <button type="submit" id="contact-send-btn" onclick="SendMail()"><i class="ri-send-plane-fill"></i> Send </button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-        <!--FOOTER-->
-        <ul class= "footer">
-            <li class="footer_info">
-                <ul class="socials">
-                    <li><a href="https://github.com/ShreyaSirgound" target="_blank" class="home__social-link"><i class="ri-github-fill" title="Github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill" title="LinkedIn"></i></a></li>
-                    <li><a href="https://substack.com/@shreyasirgound?utm_source=profile-page" target="_blank" class="home__social-link"><i class="ri-article-line" title="Substack"></i></a></li>
-                    <li><a href="https://docs.google.com/document/d/1nkP3MoA1Jld_Fm3UyINc_D_ifgI0yFAzekP1SV0JVDA/edit?usp=sharing" target="_blank" class="home__social-link"><i class="ri-file-3-line" title="Resume"></i></a></li>
-                </ul>
-            </li>
-            <li class="footer_info">Designed and made by Shreya Sirgound</li>     
-            <li class="footer_info">shreyasirgound@gmail.com</li>
-        </ul>
+            <!--FOOTER-->
+            <ul class= "footer">
+                <li class="footer_info">
+                    <ul class="socials">
+                        <li><a href="https://github.com/ShreyaSirgound" target="_blank" class="home__social-link"><i class="ri-github-fill" title="Github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill" title="LinkedIn"></i></a></li>
+                        <li><a href="https://substack.com/@shreyasirgound?utm_source=profile-page" target="_blank" class="home__social-link"><i class="ri-article-line" title="Substack"></i></a></li>
+                        <li><a href="https://docs.google.com/document/d/1nkP3MoA1Jld_Fm3UyINc_D_ifgI0yFAzekP1SV0JVDA/edit?usp=sharing" target="_blank" class="home__social-link"><i class="ri-file-3-line" title="Resume"></i></a></li>
+                    </ul>
+                </li>
+                <li class="footer_info">Designed and made by Shreya Sirgound</li>     
+                <li class="footer_info">shreyasirgound@gmail.com</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
