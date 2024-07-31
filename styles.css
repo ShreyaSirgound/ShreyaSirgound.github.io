@@ -868,7 +868,7 @@ path {
       
     .contactCard {
         width: 160%;
-        margin: 25% 0% 15% -33%;
+        margin: 45% 0% 45% -33%;
         border: 6px solid rgba(0, 0, 0, 0.3);
         box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.3);
         border-radius: 50px;
@@ -876,7 +876,7 @@ path {
     }
 
     .home__social-link{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 3px;
         display: grid;
         place-items: center;
@@ -885,7 +885,7 @@ path {
 
     .footer-section {
         background-color: #24252A;
-        font-size: 10px;
+        font-size: 12px;
         color: #8E8E8E;
         font-family: Roboto Mono, monospace;
         font-weight: 100;
