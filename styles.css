@@ -699,7 +699,6 @@ path {
 	margin: 35px;
 }
 
-
 /*RESPONSIVE FOR DEVICE SIZE CHANGES*/
 /*PHONE*/
 @media screen and (max-width: 600px){
@@ -765,6 +764,7 @@ path {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin:0;
     }
     
     .about-title {
@@ -797,7 +797,7 @@ path {
         background-color: #24252A;
         color: whitesmoke;
         width: 100%;
-        margin: 0;
+        margin: 35% 0 0 0;
         padding: 5% 5% 45% 5%;
         display: flex;
         flex-direction: column;
@@ -806,7 +806,7 @@ path {
     .main-title {
         font-size: 40px;
         padding: 5% 2% 0 2%;
-        margin: 0% 0 10% 0;
+        margin: 5% 0 10% 0;
         text-align: center;
     }
 
@@ -909,7 +909,7 @@ path {
     }
 }
  /*MEDIUM DEVICES*/
- @media screen and (min-width: 567px) {
+ @media screen and (min-width: 601px) and (max-width: 1024px) {
     html, body {
         overflow-x:hidden;
         background-color:white;
@@ -1051,7 +1051,7 @@ path {
         background-color: #24252A;
         color: whitesmoke;
         width: 100%;
-        margin: -10% 0 0 0;
+        margin: 55% 0 0 0;
         padding: 5% 5% 45% 5%;
         display: flex;
         flex-direction: column;
@@ -1080,7 +1080,7 @@ path {
     .contact-section{
         background-color: #24252A;
         width: 100%;
-        margin: -10% 0 0 0;
+        margin: -25% 0 0% 0;
         padding: 0;
         display: flex;
     }
@@ -1108,7 +1108,7 @@ path {
         opacity: 1;
         width: 100%;
         margin: 0;
-        padding: 0 3% 0 10%;
+        padding: 0% 3% 0 10%;
     }
 
     .contactSection {
@@ -1117,9 +1117,9 @@ path {
         font-size: 20px;
         color: #edf0f1;
         text-decoration: none;
-        padding: 10% 0 10% 20%;
+        padding: 10% 0 0% 20%;
         margin:15%;
-        align-items:center;
+
     }
       
     .contactCard {
@@ -1148,7 +1148,7 @@ path {
         font-weight: 100;
         height: 10%;
         margin: 0 0 0 0;
-        padding: 0 0 30% 0;
+        padding: 0 0 5% 0;
     }
     
     .footer {
