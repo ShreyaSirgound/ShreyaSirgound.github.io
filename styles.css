@@ -265,7 +265,6 @@ path {
     color: white;
     padding: 10rem 0 0;
     max-width: 35ch;
-    min-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(140, 212, 224, 0.63), 0 6px 20px 0 rgba(245, 245, 245, 0.562);
@@ -886,6 +885,264 @@ path {
     .footer-section {
         background-color: #24252A;
         font-size: 12px;
+        color: #8E8E8E;
+        font-family: Roboto Mono, monospace;
+        font-weight: 100;
+        height: 10%;
+        margin: 0 0 0 0;
+        padding: 0 0 30% 0;
+    }
+    
+    .footer {
+        list-style:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer .footer_info {
+        margin: 1.5%;
+    }
+}
+ /*MEDIUM DEVICES*/
+ @media screen and (min-width: 567px) {
+    html, body {
+        overflow-x:hidden;
+        background-color:white;
+    }
+
+    .background-image {
+        height: 100%;
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 35px 5px 40px;
+        background-color: none;
+        width: 100%;
+    }
+    
+    .nav_links {
+        list-style: none;
+    }
+    
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .nav_links li a{
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav_links li a:hover {
+        color: #027794; 
+    }
+    
+    nav li, nav a {
+        font-family: Roboto Mono, monospace;
+        font-weight: 100;
+        font-size: 20px;
+        color: #edf0f1;
+        text-decoration: none;
+    }
+    
+    path {
+        stroke-dasharray: 2458.319580078125px;
+        stroke-dashoffset: -2458.319580078125px;
+        animation: LineAnimation 5.5s ease forwards;
+        animation-delay: 250ms;
+    }
+    
+    @keyframes LineAnimation {
+        to {
+            stroke-dashoffset: 0px;
+        }
+    }
+    
+    .hero-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        justify-content: center;
+    }
+    
+    .introduction {
+        font-family: "Martian Mono", monospace;
+        font-size: 95px;
+        color: #edf0f1;
+        text-decoration: none;
+        padding:0;
+        margin: 0;
+        line-height: 160%;
+        width: 100%;
+        max-height:450px;
+    }
+    
+    .name {
+        margin:-170px 130px 0;
+        padding: 0;
+    }
+    
+    .intro-info {
+        font-family: Karla, monospace;
+        font-weight: 100;
+        font-size: 25px;
+        color: #edf0f1;
+        text-decoration: none;
+        width: 100%;
+        padding: 15% 0 0% 0;
+        line-height: 150%;
+    }
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+
+    .about-section {
+        background-color: white;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin:0;
+    }
+    
+    .about-title {
+        font-size: 50px;
+        padding:0;
+        margin: 25% 0 8% 0;
+        text-align: center;
+    }
+    
+    .about-desc {
+        font-family: Karla, monospace;
+        font-weight: 100;
+        font-size: 22px;
+        color: #24252A;
+        text-decoration: none;
+        line-height: 150%;
+        width: 80%;
+        padding: 0;
+        margin: 0 0 8% 0;
+        position: center;
+    }
+
+    .about-img {
+        width: 300px;
+        height: 310px;
+        margin: 0 0 15% 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
+    }
+    
+    .main {
+        background-color: #24252A;
+        color: whitesmoke;
+        width: 100%;
+        margin: -10% 0 0 0;
+        padding: 5% 5% 45% 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-title {
+        font-size: 50px;
+        padding: 5% 2% 0 2%;
+        margin: 5% 0 5% 0;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        max-width:100vw;
+    }
+
+    .card {
+        margin: 4%;
+        min-width:35ch;
+    }
+
+    .contact-section{
+        background-color: #24252A;
+        width: 100%;
+        margin: -10% 0 0 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .contact{
+        list-style-type:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding:0 5% 0 3%;
+    }
+    
+    .contact-title {
+        font-size: 50px;
+        color: whitesmoke;
+        text-align:center;
+    }
+    
+    .contact_desc {
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+        opacity: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0 3% 0 10%;
+    }
+
+    .contactSection {
+        font-family: Roboto Mono, monospace;
+        font-weight: 100;
+        font-size: 20px;
+        color: #edf0f1;
+        text-decoration: none;
+        padding: 10% 0 10% 20%;
+        margin:15%;
+        align-items:center;
+    }
+      
+    .contactCard {
+        background: #666666;
+        width: 450%;
+        padding: 20px 10px 10px 20px;
+        border: 6px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    .home__social-link{
+        font-size: 2rem;
+        padding: 3px;
+        display: grid;
+        place-items: center;
+        transition: background-color .3s;
+    }
+
+    .footer-section {
+        background-color: #24252A;
+        font-size: 15px;
         color: #8E8E8E;
         font-family: Roboto Mono, monospace;
         font-weight: 100;
