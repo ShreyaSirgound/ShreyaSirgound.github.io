@@ -16,7 +16,7 @@ html {
 body {
     transition: background 0.5s ease;
     /*width: 100%;
-    height: 100%*/
+    height: 100vh;*/
 }
 
 /*SCROLL ANIMATIONS*/
@@ -29,10 +29,10 @@ body {
 .show {
     opacity: 0;
     transform: translateY(2rem);
-    animation: fadeInUp 2.5s 0.75s forwards;
+    animation: fadeInUp 2s 0.2s forwards;
     margin: 0;
     padding:0;
-    height: 100%;
+   /* height:100%;*/
 }
 
 .background-image {
@@ -41,8 +41,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
-    /*width: 100%;*/
-    height: 100vh;
+    width: 100%;
+    height:100vh;
 }
 
 /*NAVBAR*/
@@ -116,7 +116,7 @@ path {
     font-size: 95px;
     color: #edf0f1;
     text-decoration: none;
-    /*padding: 60px 0px 0px 60px;*/
+    padding:0;
     margin: 0;
     line-height: 160%;
     width: 55%;
@@ -148,10 +148,9 @@ path {
 /*ABOUT SECTION*/
 .about-section {
     margin: 10% 5% 0% 0%;
-    padding: 0% 0% 0% 0%;
+    padding: 0;
     display:flex;
     justify-content: space-evenly;
-    height: 100vh;
     width: 100%;
 }
 
@@ -199,7 +198,7 @@ path {
     font-weight: 1000;
     font-size: 45px;
     margin: 0;
-    padding: 8% 0 5% 0;
+    padding: 0% 0 5% 0;
     text-align: center;
 }
 
@@ -428,8 +427,9 @@ path {
 
 /*CONTACT*/
 .contact-section{
-    background-color: #24252A;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .contact{
@@ -437,7 +437,8 @@ path {
     align-items: center;
     justify-content: center;
     display:flex;
-    padding: 25% 15% 10% 15%;
+    padding: 20% 15% 10% 15%;
+    margin: 0;
 }
 
 .contact .contact_grid {
@@ -450,7 +451,7 @@ path {
     font-weight: 1000;
     font-size: 45px;
     color: whitesmoke;
-    padding: 5% 0 15% 0;
+    padding: 0 0 15% 0;
 }
 
 .contact_desc {
@@ -471,8 +472,8 @@ path {
     font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
-    margin: 0;
-    padding: 0 0 0 0%;
+    padding: 0;
+    margin:0;
   }
   
   .contactCard {
@@ -675,20 +676,24 @@ path {
     color: blue;
 }
 
-.footer {
+.footer-section {
     background-color: #24252A;
-    height: 20vh;
     font-size: 15px;
     color: #8E8E8E;
-    display: flex;
     font-family: Roboto Mono, monospace;
     font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
     list-style:none;
-    position:relative;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .footer .footer_info {
@@ -756,7 +761,6 @@ path {
 
     .about-section {
         background-color: white;
-        margin: 0% 0% 0% 0%;
         display:flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -766,7 +770,7 @@ path {
     
     .about-title {
         font-size: 40px;
-        margin: 35% 0 5% 0;
+        margin: 15% 0 8% 0;
         text-align: center;
     }
     
@@ -778,14 +782,15 @@ path {
         text-decoration: none;
         line-height: 150%;
         width: 80%;
-        padding: 0 0 10% 0;
+        padding: 0;
+        margin: 0 0 10% 0;
+        position: center;
     }
 
     .about-img {
         width: 300px;
         height: 310px;
-        padding:0;
-        margin: 0;
+        margin: 0 0 25% 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
     }
     
@@ -801,8 +806,8 @@ path {
     
     .main-title {
         font-size: 40px;
-        padding: 0% 0 0% 0;
-        margin: 20% 0 10% 0;
+        padding: 5% 2% 0 2%;
+        margin: 15% 0 10% 0;
         text-align: center;
     }
 
@@ -814,7 +819,7 @@ path {
     }
 
     .card {
-        margin: 5%;
+        margin: 8%;
     }
 
     .contact-section{
@@ -822,6 +827,7 @@ path {
         width: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
     }
     
     .contact{
@@ -835,6 +841,7 @@ path {
     .contact-title {
         font-size: 45px;
         color: whitesmoke;
+        text-align:center;
     }
     
     .contact_desc {
@@ -859,7 +866,7 @@ path {
       
     .contactCard {
         width: 160%;
-        margin: 20% 0% 10% -33%;
+        margin: 25% 0% 15% -33%;
         border: 6px solid rgba(0, 0, 0, 0.3);
         box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.3);
         border-radius: 50px;
@@ -874,14 +881,29 @@ path {
         transition: background-color .3s;
     }
 
-    .footer {
+    .footer-section {
+        background-color: #24252A;
         font-size: 10px;
+        color: #8E8E8E;
+        font-family: Roboto Mono, monospace;
+        font-weight: 100;
+        height: 10%;
+        margin: 0 0 0 0;
+        padding: 0 0 30% 0;
+    }
+    
+    .footer {
+        list-style:none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 100%;
-        height: 15%;
-        padding: 2% 2% 2% 2%;
+        margin: 0;
+        padding: 0;
     }
     
     .footer .footer_info {
-        margin: 12px;
+        margin: 1.5%;
     }
 }
